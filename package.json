@@ -1,0 +1,47 @@
+{
+  "name": "discord-nft-floor-price",
+  "version": "0.1.0",
+  "description": "discord nft floor price",
+  "main": "build/client.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/client.js",
+    "dev": "ts-node src/client.ts",
+    "lint": "eslint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rssnyder/discord-nft-floor-price.git"
+  },
+  "keywords": [
+    "discordx",
+    "discord.ts",
+    "discord.js",
+    "bot",
+    "discord",
+    "typescript",
+    "opensea",
+    "nft"
+  ],
+  "author": "Riley Snyder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rssnyder/discord-nft-floor-price/issues"
+  },
+  "homepage": "https://github.com/rssnyder/discord-nft-floor-price.git#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "eslint": "^8.1.0",
+    "eslint-config-google": "^0.14.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@discordx/utilities": "^3.0.3",
+    "discord.js": "^13.3.1",
+    "discordx": "^8.0.1",
+    "opensea-scraper": "^4.0.1",
+    "reflect-metadata": "^0.1.13"
+  }
+}
