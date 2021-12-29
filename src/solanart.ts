@@ -65,7 +65,7 @@ client.once('ready', async () => {
       });
     } else {
       await client.user?.setActivity(`Floor: ${basicInfo.data.pagination.floorPriceFilters} SOL`, {type: 'WATCHING'});
-      console.log(`updated activity}`);
+      console.log(`updated activity`);
     }
 
     await delay(parseInt(process.env.FREQUENCY || '3600000'));
