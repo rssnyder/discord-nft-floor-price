@@ -31,4 +31,5 @@ services:
     environment:
       - DISCORD_BOT_TOKEN=XXXXXXXXXXXXXXXXXXXXX
       - SLUG=creature-world-collection
+    command: opensea
 ```
