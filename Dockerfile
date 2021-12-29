@@ -1,5 +1,3 @@
-#FROM node:17-alpine
-
 FROM node:latest
 
 RUN apt-get update -y
@@ -49,4 +47,4 @@ RUN useradd -ms /bin/bash bot
 
 USER bot
 
-ENTRYPOINT ["npm", "run", "start"]
+ENTRYPOINT ["npm", "run"]

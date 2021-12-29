@@ -1,11 +1,12 @@
 {
   "name": "discord-nft-floor-price",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "discord nft floor price",
   "main": "build/client.js",
   "scripts": {
     "build": "tsc",
-    "start": "node build/client.js",
+    "opensea": "node build/opensea.js",
+    "solanart": "node build/solanart.js",
     "dev": "ts-node src/client.ts",
     "lint": "eslint --fix"
   },
