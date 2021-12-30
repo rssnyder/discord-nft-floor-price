@@ -33,3 +33,7 @@ services:
       - SLUG=creature-world-collection
     command: opensea
 ```
+
+## add to your server
+
+if you would like a floor price bot for your server but cannot self-host with the instructions above, reach out to me on discord at `jonesbooned#1111`.
