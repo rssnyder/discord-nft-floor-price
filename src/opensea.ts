@@ -39,7 +39,7 @@ client.once('ready', async () => {
         );
         console.log(`changed nickname in ${guild}`);
       } catch (DiscordAPIError) {
-        console.log(`unable to change nickname in ${guild}`);
+        console.log(`unable to change nickname in ${guild}: ${DiscordAPIError}`);
       }
     });
     await delay(parseInt(process.env.FREQUENCY || '3600000'));
