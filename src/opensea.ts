@@ -30,13 +30,13 @@ client.once('ready', async () => {
   console.log('Bot started');
 
   while (true) {
+    const floorPrice = await OpenseaScraper.floorPrice(process.env.SLUG);
+    console.log(floorPrice);
     guilds.map(async (guild: Guild) => {
-      console.log(`changing name in ${guild}`);
-      const floorPrice = await OpenseaScraper.floorPrice(process.env.SLUG);
+      const name = `${floorPrice.amount} ${floorPrice.currency}`
+      console.log(`changing name in ${guild}: ${name}`);
       try {
-        await guild.me?.setNickname(
-            `${floorPrice.amount} ${floorPrice.currency}`,
-        );
+        await guild.me?.setNickname(name);
         console.log(`changed nickname in ${guild}`);
       } catch (DiscordAPIError) {
         console.log(`unable to change nickname in ${guild}: ${DiscordAPIError}`);

@@ -48,16 +48,16 @@ client.once('ready', async () => {
   while (true) {
 
     const basicInfo = await getCollection()
+    console.log(basicInfo);
 
     if (process.env.NICKNAME) {
       await client.user?.setActivity(process.env.SLUG || 'solanart.io', {type: 'WATCHING'});
 
       guilds.map(async (guild: Guild) => {
-        console.log(`changing name in ${guild}`);
+        const name = `${basicInfo.data.pagination.floorPriceFilters} SOL`
+        console.log(`changing name in ${guild}: ${name}`);
         try {
-          await guild.me?.setNickname(
-              `${basicInfo.data.pagination.floorPriceFilters} SOL`,
-          );
+          await guild.me?.setNickname(name);
           console.log(`changed nickname in ${guild}`);
         } catch (DiscordAPIError) {
           console.log(`unable to change nickname in ${guild}: ${DiscordAPIError}`);
