@@ -1,5 +1,7 @@
 # discord-nft-floor-price
 
+⚠️This project has been merged with [discord stock tickers](https://github.com/rssnyder/discord-stock-ticker).⚠️
+
 display the floor price for an opensea/solanart nft collection in your discord sidebar
 
 ![image](https://user-images.githubusercontent.com/7338312/140234112-09a067fc-a074-462e-87f9-c4df655d63a3.png)
